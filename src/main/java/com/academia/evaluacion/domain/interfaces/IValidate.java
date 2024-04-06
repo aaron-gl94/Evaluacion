@@ -1,6 +1,6 @@
-package com.academia.domain.interfaces;
+package com.academia.evaluacion.domain.interfaces;
 
-import com.academia.domain.exceptions.FileException;
+import com.academia.evaluacion.domain.exceptions.FileException;
 
 public interface IValidate {
 	

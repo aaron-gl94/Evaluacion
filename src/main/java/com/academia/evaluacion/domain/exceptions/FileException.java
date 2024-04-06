@@ -1,4 +1,4 @@
-package com.academia.domain.exceptions;
+package com.academia.evaluacion.domain.exceptions;
 
 public class FileException extends Exception {
 	

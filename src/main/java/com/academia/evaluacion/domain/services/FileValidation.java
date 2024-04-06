@@ -1,4 +1,4 @@
-package com.academia.domain.services;
+package com.academia.evaluacion.domain.services;
 
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
@@ -11,8 +11,8 @@ import java.util.regex.Pattern;
 
 import org.springframework.stereotype.Service;
 
-import com.academia.domain.exceptions.FileException;
-import com.academia.domain.interfaces.IValidate;
+import com.academia.evaluacion.domain.exceptions.FileException;
+import com.academia.evaluacion.domain.interfaces.IValidate;
 
 import lombok.extern.slf4j.Slf4j;
 
