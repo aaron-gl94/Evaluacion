@@ -20,7 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 public class FileValidation implements IValidate {
 	@Override
-	public void doValidation (String file) throws Exception {
+	public void doValidation (String file) throws FileException {
 		log.info("Archivo recibido:{}", file);
 		
 		this.fileNameRegex_Validation(file);
