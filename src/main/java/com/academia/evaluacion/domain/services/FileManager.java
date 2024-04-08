@@ -37,6 +37,7 @@ public class FileManager implements IFileManager {
 		
 		try {
 			fileValidation.doValidation(filename);
+			persistFile(file);
 		} catch (Exception e) {
 			log.error("[saveImage.fileValidation.doValidation]: La validación rechazo este archivo. | Error: " + e);
 			throw new FileException("[saveImage.fileValidation.doValidation]: La validación rechazo este archivo. | Error: " + e);
@@ -51,6 +52,10 @@ public class FileManager implements IFileManager {
             throw new FileException("[fileManager.isImage]: El archivo no es una imagen.");
         }
     }
+
+	public void persistFile(MultipartFile file) throws FileException {
+		log.info("[persistFile] Archivo recibido: {}", file.getOriginalFilename());		
+	}
 	
 	
 

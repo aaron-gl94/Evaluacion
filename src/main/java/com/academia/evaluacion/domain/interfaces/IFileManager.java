@@ -7,5 +7,6 @@ import com.academia.evaluacion.domain.exceptions.FileException;
 public interface IFileManager {
 
 	void saveImage(MultipartFile file) throws FileException;
+	void persistFile(MultipartFile file) throws FileException;
 
 }
