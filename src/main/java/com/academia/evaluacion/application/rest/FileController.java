@@ -12,6 +12,7 @@ import org.springframework.web.multipart.MultipartFile;
 import com.academia.evaluacion.domain.exceptions.FileException;
 import com.academia.evaluacion.domain.services.FileManager;
 
+import io.swagger.v3.oas.annotations.Operation;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -21,6 +22,7 @@ public class FileController implements IFileController {
 	@Autowired
 	private FileManager fileManager;
 	
+	@Operation(summary="Metodo para la carga de archivos de tipo imagen.")
 	@ResponseStatus(code = HttpStatus.CREATED)
 	public ResponseEntity<String> uploadImage(@RequestParam("image") MultipartFile file) throws FileException {
 		
@@ -30,6 +32,7 @@ public class FileController implements IFileController {
 		
     }
 	
+	@Operation(summary="ExceptionHandler del controlador [DocumentsController]")
 	@ExceptionHandler(Exception.class)
 	public ResponseEntity<String> handlerException(Exception exception){
 		

@@ -32,6 +32,18 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- SWAGGER ANNOTATIONS -->
+		<dependency>
+		    <groupId>io.swagger.core.v3</groupId>
+		    <artifactId>swagger-annotations</artifactId>
+		    <version>2.2.21</version>
+		</dependency>
+		
+		<dependency>
+		 	<groupId>org.springdoc</groupId>
+		 	<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+		 	<version>2.2.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
